@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--version of html written in-->
+<html lang="en">
+<!--what language and language-->
+
+    <head>
+    <!--info on the actual html thing-->
+        <title> The Title</title>
+        <!--title of webpage-->
+        <meta charset="UTF-8">
+        <!--character encoding of document-->
+        <meta name="description" content="HTML Stuff">
+        <!--shows the description of the webpage when you hover the cursor over the title-->
+        
+
+        <!--you should add a style sheet when you are doing CSS-->
+    </head>
+
+    <style>
+        table, th, td {
+            border: 3px solid purple;
+            border-collapse: collapse;
+        }
+        /*this is for the table qualities like border, etc.*/
+        /*it is done under style bc it is a css tag*/
+        .vectorstock {
+            background-color: aliceblue;
+            color: black;
+            margin: 10px;
+            padding: 20px;
+            display: inline-block;
+        }
+        /*this is for classes and the qualities you want for all of them*/
+            /*you use a . for class*/
+        span.navyblue {
+            color: navy;
+        }
+        /*this affects only one word/phrase inside of something, unlike div*/
+        #firstthingonpage {
+            background-color: brown;
+            color: coral;
+            padding: 15px;
+        }
+        /*this is used for only one thing, as it's an id*/
+            /*you use a # for id*/
+    </style>
+    <!--style is for css-->
+
+    <body style="background-image: url('https://cdn2.vectorstock.com/i/1000x1000/21/81/orange-background-with-white-polka-dots-vector-22322181.jpg;')">
+    <!--body is all the written stuff on the page-->
+    <!--style is the appearance, in this case background color-->
+        <!--used to be background color, now background image-->
+        <h1 id="firstthingonpage">I'm the first thing on the page! </h1>
+        <!--uses id so the properties apply to it-->
+        <div class="vectorstock">
+            <h3>vectorstock is</h3>
+            <h2>the source of</h2>
+            <p>my backgroud</p>
+        </div>
+        <!--class is so the qualities applies in style work on this-->
+        <!--edited so it does not take up the whole line-->
+        <br/>
+        <!--keeps the divs on seperate lines-->
+        <div class="vectorstock">
+            <h1>now making these</h1>
+            <h2>on seperate</h2>
+            <p>lines</p>
+        </div>
+        <!--another use of the class-->
+        <p>My <span class="navyblue">navy blue</span> words</p>
+        <!--uses span class to only affect on word-->
+        <div>
+            <div>
+                <div style="display: inline">
+                    <span>Row 1, Cell number 1</span>
+                </div>
+                <div style="display: inline">
+                    <span>Row 1, Cell number 2</span>
+                </div>
+            </div>
+            <div>
+                <div style="display: inline">
+                    <span>Row 2, Cell number 1</span>
+                </div>
+                <div style="display: inline">
+                    <span>Row 2, Cell number 2</span>
+                </div>
+            </div>
+        </div>
+        <!--using div to make tables (instead of table)-->
+        <h1 style="font-size:50px;">Big Heading</h1>
+        <!--h1 is biggest header-->
+        <!--style font size is how many pixels the font is-->
+        <h2 style="color:navy;font-family:Comic Sans MS,cursive, Comic Sans;">Smaller Heading</h2>
+        <!--h2 is second biggest header-->
+        <!--style color is the color of the text-->
+        <!--font family is the font (or options of fonts) used-->
+        <p style="color:paleturquoise;font-size:300%;">Paragraph</p>
+        <!--p is paragraph-->
+        <!--font size is also the percentage it is of original size-->
+        <p style="font-family: cursive;">Paragraph with a <br/> line break</br/></p>
+        <!--br means line break, so they are on seperate lines-->
+        <pre style="text-align:center; background-image: url('https://img.freepik.com/free-vector/elegant-green-geometric-polygon-background_1035-13146.jpg?size=338&ext=jpg')">
+            One must follow
+            Simple
+            Instructions
+        </pre>
+        <!--pre means that if you put them on seperate lines in the code it appearsas seperate lines on the document-->
+        <!--text align means where the text is, like center or right or left-->
+        <!--background image means the image used as a background specifically for the text-->
+        <p><strong>Strong boi has emphasis</strong></p>
+        <!--strong means it looks bold but will be read in a normal tone of voice, in other words it is more driving a point home then loud-->
+        <p><b>Bold boi is a font</b></p>
+        <!--B(old) is loud and a font style-->
+        <p><i>italic boi is a font</i></p>
+        <!--i(talic) is a font style-->
+        <p><em>emphasis boi has emphasis</em></p>
+        <!--em(phasis) stresses a word/phrase-->
+        <p>hello <small>small text</small> </p>
+        <!--small means text small in size-->
+        <p>hello <mark>marked text</mark></p>
+        <!--mark means highlited text-->
+        <p>hello <del>deleted text</del></p>
+        <!--del means text with a strikethrough-->
+        <p>hello <ins>inserted text</ins></p>
+        <!--ins means underlined text-->
+        <p>hello <sub>subscripted text</sub></p>
+        <!--sub means subscritped text-->
+        <p>hello <sup>superscripted text</sup></p>
+        <!--sup means superscripted text-->
+        <p style="color:darkkhaki">different colored paragraph</p>
+        <p>here is a quote: <q>quote</q></p>
+        <!--q means a quote ("") has been inserted into a line-->
+        <p>here is a blockquote</p>
+            <blockquote cite="https://www.petmd.com/">
+            I love dogs blockquote
+            </blockquote>
+        <!--blockquote means an entire section made up of a quote has been inserted, so it gets indented-->
+        <p>the <abbr title="Oh My God">OMG</abbr></p>
+        <!--abbr abbreviates something and adds weird lines under it-->
+        <p title="Hey">
+            Yet another paragraph
+        </p>
+        <!--title makes it so when you put your mourse over it it shows the title-->
+        <address>
+            Written by me <br/>
+            Visit me at my house <br/>
+        </address>
+        <!--address puts the text in italics, signifying a signature/address-->
+        <bdo dir="rtl">right to left baby</bdo>
+        <!--bdo (bi-directional override) makes it so your text reads backwards-->
+        <p style="background-color:darkviolet">hi!!!!!</p>
+        <!--background-color sets the background color of the text-->
+        <p style="border:2px solid tomato">im using html rn!</p>
+        <!--border sets the thickness and color of the border-->
+        <h1 style="background-color: rgba(125, 83, 12, 0.75)">oooh another background color</h1>
+        <!--rgba uses the values of red green blue (255 is highest, 0 is lowest), and the saturation of alpha (0.0 is none, 1.0 is 100%)-->
+        <h2 style="background-color: hsl(25, 60%, 75%)">hsl babeyyyyy</h2>
+        <!--hsl is hue (0 is red, 120 is green, 240 is blue), s is saturation (0-100%), and l is lightness-->
+        <div style="background-color: rgb(119, 26, 219); color: white; padding: 10px;">
+            <p>Div is where it's at</p>
+        </div>
+        <!--Div selects text and uses the whole line to, say, put a background-->
+        <p>Fr tho, <span style="color:rgb(129, 82, 28)">span</span> is also where it's at</p>
+        <!--Span is for a specific word or phrase, and only effects that-->
+
+<!--now its time for non text stuff! (its still in the body cuz its still on the page)-->
+
+        <a href="https://www.google.com">Hello Mr. Link</a>
+        <!--href inserts a link you can go to from the page-->
+        <a href="New HTML stuff.html">
+            <img src="https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_1000x1000_$&$product=PartyCity/P636269" alt="dino" style="width:140px;height:240px"></img>
+        </a>
+        <!--makes an image into a link-->
+        <img src="https://images-na.ssl-images-amazon.com/images/I/810vYXtKb%2BL._SY450_.jpg" alt="deadpool plushie" style="width:128px;height:142px"></img>
+        <!--uses style for w/h so it doesn't get messed up-->
+        <img src="https://media.giphy.com/media/l9V2QyiHJtgbOlSgSy/giphy.gif" alt="that one gif" style="width:140;height:230"></img>
+        <!--uses gif as image, same format as regular image-->
+        <hr>
+        <!--hr makes a line in between things-->
+        <img src="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" alt="Pug" width="142" height="142"></img>
+        <!--img inserts an image-->
+            <!--src gets the source of the image (image address, etc.)-->
+            <!--alt gives a name of the image if it doesnt load or if someone is visually impaired-->
+            <!--width and height give the dimensions of the image-->
+        <img src="data:image/jpeg;base64,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" alt="cat meme" height="100px" width="100px"></img>
+        <p><cite>Cat meme</cite> by a meme person.</p>
+        <!--cite (underneath and image) cites an image by putting the name of it in italics (in between cite)-->
+        <p><img src="http://www.clker.com/cliparts/L/F/t/n/y/I/orange-cloud-md.png" alt="orange cloud" style="float: right; width: 140px; height: 140px"></img>
+            Orange cloud </p>
+        <!--float image to right of orange cloud-->
+        <img src="https://i.kym-cdn.com/entries/icons/mobile/000/018/929/graphic_design_is_my_passion.jpg" alt="graphic design is my graphic_design_is_my_passion" usemap="#notworkmap" style="width: 400; height: 200;"><img>
+            <map name="notworkmap">
+                <area shape="rect" coords="515,67,690,260" alt="frog" href="https://ichef.bbci.co.uk/news/976/cpsprodpb/ED57/production/_106895706_14e3bcc8-283e-447e-a7c9-5047dbe732bf.jpg">
+            </map>
+        <button>Hello</button>
+        <!--button makes a button you can press on-->
+        <ul style="list-style-type: circle;">
+            <li>Hi</li>
+            <li>My Name Is</li>
+            <li>Joe</li>
+        </ul>
+        <!--ul makes an unorganized list, so bullet points-->
+            <!--li goes in front of every thing in the list-->
+        <ol type="I">
+            <li>And I</li>
+            <li>Work in a</li>
+            <li>Button Factory</li>
+        </ol>
+        <!--ol makes an organized list, so number order-->
+        <table style="width: 100%">
+            <tr>
+                <th>Occupation</th>
+                <th>Name</th>
+                <th>Annual Salary</th>
+            </tr>
+            <tr>
+                <td>Tree Surgeon </td>
+                <td>Mikayleigh</td>
+                <td>$1.3m</td>
+            </tr>
+            <tr>
+                <td>Oragami Crane Maker</td>
+                <td>Geoff</td>
+                <td>$900k</td>
+            </tr>
+            <tr>
+                <td>Developer</td>
+                <td>Jamie</td>
+                <td>$2 and 50 cents</td>
+            </tr>
+        </table>
+        <!--table (the apparently bad way) makes a table-->
+        <iframe height="1280px" width="956px" src="https://i.pinimg.com/originals/7d/ce/f0/7dcef08935ce0ca1d0d8e88d3136bde1.jpg" name="my_iframe" style="border: none"></iframe>
+        <p><a href="https://www.eradani.com/" target="my_iframe">Eradani my dudes</a></p>
+        <!--iframe adds a mini webpage into the webpage-->
+
+        <!--this (script) is for javascript-->
+        <p id="js"></p>
+        <script>
+            document.getElementById("js").innerHTML="Nice it's javascript";
+        </script>
+        <!--this types out the text using javascript-->
+        <button type="button" onclick="aFunction()">This is a button</button>
+        <p id="example">this is a javascript button example</p>
+        <script>
+        function aFunction() {
+            document.getElementById("example").innerHTML="this is now clicked";
+        }
+        </script>
+        <!--this makes a button change text using javascript-->
+        <p id="changeStyle">i am changing the style of the text</p>
+        <script>
+            function newStyle() {
+                document.getElementById("changeStyle").style.fontFamily="Comic Sans MS,cursive";
+                document.getElementById("changeStyle").style.color="white";
+                document.getElementById("changeStyle").style.fontSize="20px";
+            }
+        </script>
+        <button type="button" onclick="newStyle()">another button!!!</button>
+        <!--thsi makes a button that chnages text style using javascript-->
+        <script>
+        function eagle(newOne) {
+            var bald;
+            if (newOne == 0) {
+                bald = "https://www.thoughtco.com/thmb/HkYbzkvhT1OzVdXLRkKwh6mp8Xc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/american-bald-eagle-head-in-front-of-american-flag-950701786-5b85581346e0fb0025e00b06.jpg"
+            } else {
+                bald = "https://i.pinimg.com/originals/78/ad/1a/78ad1a9d0efd2a7f108742491cd8fc60.jpg"
+            }
+            document.getElementById("America").src = bald;
+        }
+        </script>
+        <img id="America" src="https://www.thoughtco.com/thmb/HkYbzkvhT1OzVdXLRkKwh6mp8Xc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/american-bald-eagle-head-in-front-of-american-flag-950701786-5b85581346e0fb0025e00b06.jpg" width="768" height="512"></img>
+        <p>
+            <button type="button" onclick="eagle(1)">Good Eagle</button>
+            <button type="button" onclick="eagle(0)">Boring Eagle</button>
+        </p>
+        <!--this makes a button that switches between two eagles-->
+        <p style="font-size: 25px;">Save the document by pressing <kbd>Ctrl + S</kbd></p>
+        <!--the kbd makes the font show up as monospace to represent an instruction to do with the computer-->
+        <p style="font-size: 20px;color:rgb(19, 231, 196);">This is a sample <samp>error</samp>!!!</p>
+        <!--the samp(le) makes the font monospace the show an example of something-->
+        <code>i++ is a good number</code>
+        <!--the code makes the font monospace to represent code-->
+        <pre>
+            <code>
+                i++;
+                x=y + 3;
+            </code>
+        </pre>
+        <!--the pre along with the code makes the text go on seperate lines-->
+            <!--pre defines preformatted text (i++ and x=y+3 are on seperate lines in the code so they are on seperate lines on the webpage-->
+        <!--the following are html character entities-->
+        <p>An example of a variable expression is: <var>f(x)</var> = <var>mx + b</var></p>
+        <!--var makes the text show up slanted to symbolize an expression or variable-->
+        <p> a reserved entity sign is &lt , which is its name or &#60;, which is its number</p>
+        <!--the entity < is used for tags, so for it to show up in text an entity sign is needed. Names are easy to remember, but numbers are always supported-->
+        <p>hey wanna see an ampersand &#38; cool right?</p>
+        <!--the entity & is represented by &amp and &#38-->
+        <p>ooooooh greater than sign? here it is &gt;</p>
+        <!--&gt and &#62 are greater than-->
+        <p>here is a non-breaking space: &nbsp;</p>
+        <!--non breaking space is &nbsp and &#160-->
+        <p>double quotation mark looks like this: &quot;</p>
+        <!--" is &quot and &#34 -->
+        <p>apostropheeeeeeeeee &#39;</p>
+        <!--&apos (altho its iffy) and &#39 is '-->
+        <p>cent boi &cent;</p>
+        <!--&cent n &#162-->
+        <p>this be a a pound: &pound;</p>
+        <!--&pound and &#163-->
+        <p>what a looker, this &yen;</p>
+        <!--&#165; and &yen are the notation for yen-->
+        <p>a euro looks like this: &euro;</p>
+        <!--euro be like &euro and &#8364-->
+        <p>how to do a copyright? Here ya go: &copy;</p>
+        <!--cpyright can be &copy; or &#169;-->
+        <p>last one! What about a registered trademark? &reg; </p>
+        <!--You can do...&reg; or &174-->
+        <!--some diacritical marks...-->
+        <p>heres that backwards-apostrophe-accent-thingy(for a ): a&#768</p>
+        <!--this is for the apos-a like in spanish (to get it on o put o in front insted of a)-->
+        <p>this time apostrophe on a! a&#769</p>
+        <!--apos on a (same thing with o)-->
+        <p>kinda exponent thing? a&#770</p>
+        <!--a with a carrot-->
+        <p>squiggly-line a! a&#771</p>
+        <!--enya! learned this one in spanish. Usually goes on n?-->
+        <!--now its time for math symbols :|-->
+        <p style="color:rgb(60, 250, 2)");>for all: &forall;</p>
+        <!--this does the for all symbol, alt &#8704-->
+        <p style="font-size: 40px; color:rgb(0, 26, 255)");><b>partial differential: &part;</b></p>
+        <!--partial differential symbol, alt &#8706;-->
+        <p style="color:rgb(255, 255, 255)");>there exists: &exist;</p>
+        <!--there exists symbol, alt &#8707;-->
+        <p>empty sets: &empty;</p>
+        <!--empty sets symbol, alt &#8709;-->
+        <p>nabla: &nabla;</p>
+        <!--nabla symbol, alt &#8711;-->
+        <p>element of: &isin;</p>
+        <!--element of symbol, alt &#8712;-->
+        <p>not an element of: &notin;</p>
+        <!--not an element of symbol, alt &#8713;-->
+        <p>contains a member: &ni;</p>
+        <!--contains a number symbol, alt &#8715;-->
+        <p>n-ary product: &prod;</p>
+        <!--n-ary product symbol, alt &#8719;-->
+        <p>n-ary summation: &sum;</p>
+        <!--n-ary summation symbol, alt &#8721;-->
+        <p>greek capital letter alpha: &Alpha;</p>
+        <!--greek capital letter alpha symbol, alt &#913-->
+        <p>greek capital letter beta: &Beta;</p>
+        <!--greek capital letter beta symbol, alt &#914-->
+        <p>greek capital letter gamma: &Gamma;</p>
+        <!--greek capital letter gamma symbol, alt &#915-->
+        <p>greek capital letter delta: &Delta;</p>
+        <!--greel capital letter delta symbol, alt &#916-->
+        <p>greek capita letter epsilon: &Epsilon;</p>
+        <!--greek capital letter epsilon symbol, alt &#917-->
+        <p>greek capital letter zeta: &Zeta;</p>
+        <!--greek capital letter zeta symbol, alt &#918-->
+        <!--now we are doing other entities-->
+        <p>trademark: &trade;</p>
+        <!--trademark symbol, alt &#8482;-->
+        <p>left arrow: &larr;</p>
+        <!--left arrow symbol, alt &#8592;-->
+        <p>up arrow: &uarr;</p>
+        <!--upwards arrow, alt &#8593-->
+        <p>right arrow: &rarr;</p>
+        <!--right arrow, alt &#8594-->
+        <p>down arrow: &darr;</p>
+        <!--down arrow, alt &#8595-->
+        <p>black spade suit: &spades;</p>
+        <!--black spades suit symbol, alt &#9824;-->
+        <p>black club suit: &clubs;</p>
+        <!--black clubs suit symbol, alt &#9827;-->
+        <p>black heart suit: &hearts;</p>
+        <!--black heart suit symbol, alt &#9829;-->
+        <p>black diamond suit: &diams;</p>
+        <!--black diamond suit symbol, alt &#9830;-->
+        <form> <!--<form action="/action_page.php">-->
+            Do you like the frog? <br>
+            <input type="text" name="answer">
+            <br><br>
+            <input type="submit" value="Submit">
+            <br>
+            Which eagle is better? <br>
+            <input type="radio" name="eagle" value="good eagle"> Good Eagle<br>
+            <input type="radio" name="eagle" value="boring eagle"> Boring Eagle<br>
+            <fieldset>
+                <legend style="color: rgb(252, 252, 252)">Answers 2 QUestions</legend>
+                <p style="color: rgb(252, 252, 252)">Favorite color:</p><br>
+                <input type="radio" name="color" value="black"> <p style="color: rgb(252, 252, 252)">Black</p><br>
+                <input type="radio" name="color" value="lame colors"> Other lame and pathetic colors<br>
+            </fieldset>
+        </form>
+
+    </body>
+
+</html>
