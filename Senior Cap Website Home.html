@@ -42,7 +42,7 @@
         display: inline-block;
     }
 
-    /* Dropdown Content (Hidden by Default) 
+    /* Dropdown Content (Hidden by Default)
     .dropdown-content {
         display: none;
         position: absolute;
@@ -52,7 +52,7 @@
         z-index: 1;
     }
 
-    /* Links inside the dropdown 
+    /* Links inside the dropdown
     .dropdown-content a {
         color: black;
         padding: 12px 16px;
@@ -60,20 +60,25 @@
         display: block;
     }
 
-    /* Change color of dropdown links on hover 
+    /* Change color of dropdown links on hover
     .dropdown-content a:hover {
         background-color: #ddd
     }
 
-    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) 
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button)
     .show {
         display: block;
     }
+
+    Why is this here:
+    .navbar a:hover {
+            background-color:  rgb(7, 141, 14);
+        }
     **/
         /* Navbar container */
         .navbar {
             overflow: hidden;
-            background-color: #333;
+            background-color: rgb(12, 5, 71);
             font-family: Arial;
         }
 
@@ -87,13 +92,13 @@
             text-decoration: none;
         }
 
-        /* The dropdown container */
+        /** The dropdown container
         .dropdown {
             float: left;
             overflow: hidden;
         }
 
-        /* Dropdown button */
+        Dropdown button
         .dropdown .dropbtn {
             font-size: 16px;
             border: none;
@@ -102,18 +107,19 @@
             padding: 14px 16px;
             background-color: inherit;
             font-family: inherit;
-            /* Important for vertical align on mobile phones */
+            Important for vertical align on mobile phones
             margin: 0;
-            /* Important for vertical align on mobile phones */
+             Important for vertical align on mobile phones
         }
 
-        /* Add a red background color to navbar links on hover */
+        Add a red background color to navbar links on hover
         .navbar a:hover,
         .dropdown:hover .dropbtn {
-            background-color: red;
+            background-color: rgb(7, 141, 14);
         }
 
-        /* Dropdown content (hidden by default) */
+
+        Dropdown content (hidden by default)
         .dropdown-content {
             display: none;
             position: absolute;
@@ -123,7 +129,7 @@
             z-index: 1;
         }
 
-        /* Links inside the dropdown */
+        Links inside the dropdown
         .dropdown-content a {
             float: none;
             color: black;
@@ -133,12 +139,12 @@
             text-align: left;
         }
 
-        /* Add a grey background color to dropdown links on hover */
+         Add a grey background color to dropdown links on hover
         .dropdown-content a:hover {
             background-color: #ddd;
         }
 
-        /* Show the dropdown menu on hover */
+         Show the dropdown menu on hover
         .dropdown:hover .dropdown-content {
             display: block;
         }
@@ -151,7 +157,7 @@
             overflow: hidden;
         }
 
-        /* Dropdown button */
+        Dropdown button
         .dropdown2 .dropbtn2 {
             font-size: 16px;
             border: none;
@@ -160,12 +166,13 @@
             padding: 14px 16px;
             background-color: inherit;
             font-family: inherit;
-            /* Important for vertical align on mobile phones */
+            Important for vertical align on mobile phones
             margin: 0;
-            /* Important for vertical align on mobile phones */
+            Important for vertical align on mobile phones
         }
 
-        /* Dropdown content (hidden by default) */
+
+        Dropdown content (hidden by default)
         .dropdown-content2 {
             display: none;
             position: absolute;
@@ -177,10 +184,20 @@
 
         .navbar a:hover,
         .dropdown2:hover .dropbtn2 {
-            background-color: red;
+            background-color: rgb(7, 141, 14);
         }
 
-        /* Links inside the dropdown */
+         Dropdown content (hidden by default)
+        .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        Links inside the dropdown
         .dropdown-content2 a {
             float: none;
             color: black;
@@ -190,17 +207,16 @@
             text-align: left;
         }
 
-        /* Add a grey background color to dropdown links on hover */
+        /* Add a grey background color to dropdown links on hover
         .dropdown-content2 a:hover {
             background-color: #ddd;
         }
 
-        /* Show the dropdown menu on hover */
+        /* Show the dropdown menu on hover
         .dropdown2:hover .dropdown-content2 {
             display: block;
         }
-
-
+        */
 
         .dropdown3 {
             float: left;
@@ -221,6 +237,11 @@
             /* Important for vertical align on mobile phones */
         }
 
+        .navbar a:hover,
+        .dropdown3:hover .dropbtn3 {
+            background-color: rgb(7, 141, 14);
+        }
+
         /* Dropdown content (hidden by default) */
         .dropdown-content3 {
             display: none;
@@ -229,11 +250,6 @@
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
-        }
-
-        .navbar a:hover,
-        .dropdown3:hover .dropbtn2 {
-            background-color: red;
         }
 
         /* Links inside the dropdown */
@@ -268,16 +284,29 @@
             <button class="dropbtn3" onclick="myFunction()">Healthcare
                 <i class="fa fa-caret-down3"></i>
             </button>
-            <div class="dropdown-content3" id="myDropdown3">
+            <div class="dropdown-content3" id="myDropdown1">
                 <a href="#">Women's Resources</a>
             </div>
         </div>
 
-        <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">Citizenship
-                <i class="fa fa-caret-down"></i>
+        <div class="dropdown3">
+            <button class="dropbtn3" onclick="myFunction()">Resources
+                <i class="fa fa-caret-down3"></i>
             </button>
-            <div class="dropdown-content" id="myDropdown">
+            <div class="dropdown-content3" id="myDropdown3">
+                <a href="#">Education</a>
+                <a href="#">Consultation</a>
+                <a href="#">Phone Numbers</a>
+                <a href="#">Agencies</a>
+                <a href="#">Common Words & Phrases</a>
+            </div>
+        </div>
+
+        <div class="dropdown3">
+            <button class="dropbtn3" onclick="myFunction()">Citizenship
+                <i class="fa fa-caret-down3"></i>
+            </button>
+            <div class="dropdown-content3" id="myDropdown2">
                 <a href="#">Naturalization</a>
                 <a href="#">Benefits</a>
                 <a href="#">Paths to Citizenship</a>
@@ -288,18 +317,7 @@
             </div>
         </div>
 
-        <div class="dropdown2">
-            <button class="dropbtn2" onclick="myFunction2()">Resources
-                <i class="fa fa-caret-down2"></i>
-            </button>
-            <div class="dropdown-content2" id="myDropdown2">
-                <a href="#">Education</a>
-                <a href="#">Consultation</a>
-                <a href="#">Phone Numbers</a>
-                <a href="#">Agencies</a>
-                <a href="#">Common Words & Phrases</a>
-            </div>
-        </div>
+
 
         <a href="about">About Us</a>
     </div>
@@ -318,7 +336,7 @@
     -->
 
     <script>
-        /* When the user clicks on the button, 
+        /* When the user clicks on the button,
        toggle between hiding and showing the dropdown content */
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
